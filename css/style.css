@@ -1,25 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
     list-style: none;
     text-decoration: none;
+    font-family: 'Poppins', sans-serif;
 }
-
 :root{
-    --main-color:#eb1d1d;
+    --main-color: rgb(226, 24, 10);
     --text-color:#fff;
-    --bg-color:#2f2e33;
-    --big-font:5rem;
+    --bg-color:#0f0d15;
+    --big-font:4rem;
     --h2-font:2.25rem;
     --p-font:0.9rem;
-
 }
-*::selection {
-    background: var(--main-color);
-    color: #fff ;
+*::selection{
+    background-color: var(--main-color);
+    color:#fff;
 }
 body{
     color: var(--text-color);
@@ -36,12 +35,12 @@ header{
     justify-content: space-between;
     padding: 30px 170px;
     background: var(--bg-color);
-
 }
 .logo{
     color: var(--main-color);
     font-weight: 600;
     font-size: 2.4rem;
+    font-family: 'Chakra Petch', sans-serif;
 }
 .navbar{
     display: flex;
@@ -51,16 +50,15 @@ header{
     font-size: 1.1rem;
     padding: 10px 20px;
     font-weight: 500;
-
 }
 .navbar a:hover{
     color: var(--main-color);
     transition: .4s;
 }
-#menu-icon{
-    font-size: 2rem ;
+.menu-1{
+    font-size: 2rem;
     cursor: pointer;
-    display: none;
+    display: none; 
 }
 section{
     padding: 70px 17%;
@@ -69,13 +67,13 @@ section{
     width: 100%;
     min-height: 90vh;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5 rem;
     align-items: center;
 }
 .home-img img{
     max-width: 100%;
-    width: 600px ;
+    width: 600px;
     height: auto;
 }
 .home-text h1{
@@ -85,7 +83,6 @@ section{
 .home-text h2{
     font-size: var(--h2-font);
     margin: 1rem 0 2rem;
-
 }
 .btn{
     display: inline-block;
@@ -95,12 +92,12 @@ section{
     border-radius: 0.5rem;
 }
 .btn:hover{
-    transform: scale(1.2) translate(10px);
+    transform: scale(1.2) translateY(10px);
     transition: .4s;
 }
 .about{
     display: grid;
-    grid-template-columns: repeat(2,2fr);
+    grid-template-columns: repeat(2, 2fr);
     grid-gap: 1.5rem;
     align-items: center;
 }
@@ -126,7 +123,6 @@ section{
 .heading span{
     color: var(--main-color);
     font-weight: 600;
-
 }
 .heading h2{
     font-size: var(--h2-font);
@@ -134,7 +130,7 @@ section{
 .menu-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, auto));
-    grid-gap: 1.5rem ;
+    grid-gap: 1.5rem;
     align-items: center;
 }
 .box{
@@ -148,8 +144,6 @@ section{
     background: #feeee7;
     padding: 20px;
     border-radius: 0.5rem;
-
-
 }
 .box-img{
     width: 220px;
@@ -164,31 +158,30 @@ section{
     color: var(--bg-color);
 }
 .box h3{
-    color: var(--bg-color) ;
+    color: var(--bg-color);
     font-size: 1rem;
     font-weight: 400;
-    margin:4px 0 10px ;
+    margin: 4px 0 10px;
 }
 .box span{
     font-size: var(--p-font);
     color: var(--main-color);
     font-weight: 600;
 }
-.box .bx{
+#cart{
     background: var(--main-color);
     position: absolute;
     right: 0;
     top: 0;
     font-size: 20px;
-    padding:7px 10px ;
+    padding: 7px 10px;
     border-radius: 0 0.5rem 0 0.5rem;
 }
 .service-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, auto));
-    grid-gap:1.5rem;
+    grid-template-columns: repeat(auto-fit,minmax(240px, auto));
+    grid-gap: 1.5rem;
     margin-top: 4rem;
-
 }
 .s-box{
     text-align: center;
@@ -196,7 +189,6 @@ section{
 }
 .s-box img{
     width: 90px;
-
 }
 .s-box h3{
     margin: 4px 0 10px;
@@ -218,7 +210,6 @@ section{
     font-size: 2rem;
     color: var(--bg-color);
     margin-bottom: 30px;
-
 }
 .main{
     display: flex;
@@ -244,7 +235,6 @@ section{
     left: 0;
     bottom: -8px;
     background: var(--main-color);
-
 }
 .col ul li:not(:last-child){
     margin-bottom: 15px;
@@ -271,61 +261,65 @@ section{
     width: 40px;
     background: var(--main-color);
     color: var(--text-color);
-    display: inline-flex ;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.5rem ;
-    border-radius: 50%;
+    font-size: 1.5rem;
+    border-radius: 20px;
     transition: .4s;
-
 }
 .col .social a:hover{
     transform: scale(1.2);
     color: var(--bg-color);
     background: var(--text-color);
 }
-@media (max-width: 150px){
+@media (max-width: 1073px){
     header{
         padding: 15px 40px;
     }
-    :root{
+    :root {
         --big-font:3.5rem;
-        --h2-font: 2rem;
+        --h2-font:2rem;
     }
 }
-@media (max-width: 1140px){
-    section{
-        padding: 50px 8%;
-    }
-    #menu-icon{
-        display: initial;
-        color: var(--text-color);
-    }
-    header .navbar{
-        position: absolute;
-        top: -400px;
-        left: 0;
-        right: 0;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        background: #2b2640;
-        transition: .3s;
-
-    }
-    header .navbar.active{
-       top: 70px; 
-    }
-    .navbar a{
-        padding: 1.5rem;
-        display: block;
-    }
-    .col{
-        width: 50%;
+@media (max-width: 810px){
+    .col{ 
+        width: 30%;
         margin-bottom: 10px;
     }
 }
-@media (max-width: 720px){
+@media (max-width: 703px){
+    section{
+        padding: 50px 8%;
+    }
+#menu-icon{
+    display: initial;
+    color: var(--text-color);
+}
+header .navbar{
+    position: absolute;
+    top: -400px;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: #2b2640;
+    transition: .3s;
+}
+header .navbar.active{
+    top: 70px;
+}
+.navbar a{
+    padding: 1.5rem;
+    display: block;
+}
+.col{
+    width: 50%;
+    margin-bottom: 10px;
+}
+}
+@media (max-width: 553px){
     header{
         padding: 10px 16px;
     }
@@ -343,9 +337,7 @@ section{
     section{
         padding: 100px 7%;
     }
-}
-@media (max-width: 575px){
     .col{
-        width:100%;
+        width: 100%;
     }
 }
