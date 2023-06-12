@@ -49,7 +49,7 @@ header{
 .navbar a{
     color: var(--text-color);
     font-size: 1.1rem;
-    padding: 10px;
+    padding: 10px 20px;
     font-weight: 500;
 
 }
@@ -79,7 +79,7 @@ section{
     height: auto;
 }
 .home-text h1{
-    font-size: var(--bg-color);
+    font-size: var(--big-font);
     color: var(--main-color);
 }
 .home-text h2{
@@ -185,7 +185,7 @@ section{
 }
 .service-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(140px, auto));
     grid-gap:1.5rem;
     margin-top: 4rem;
 
